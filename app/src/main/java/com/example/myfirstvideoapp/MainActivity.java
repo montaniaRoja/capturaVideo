@@ -28,7 +28,7 @@ import java.io.OutputStream;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnCapture, btnSave;
+    Button btnCapture, btnSave, btnlist;
     VideoView videoView;
     Uri videoUri;
 
@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
         btnCapture = (Button) findViewById(R.id.btnCapture);
         btnSave = (Button) findViewById(R.id.btnSave);
+        btnlist = (Button) findViewById(R.id.btnList);
         videoView = findViewById(R.id.videoView);
 
         btnCapture.setOnClickListener(new View.OnClickListener() {
@@ -55,6 +56,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnlist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
