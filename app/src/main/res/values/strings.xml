@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyFirstVideoApp</string>
+    <string name="Respuesta">Registro ingreso con exito</string>
+    <string name="ErrorResp">Fallo al guardar el registro</string>
+</resources>
